@@ -14,10 +14,12 @@ These API calls have been tested on the following cameras:
 Sercomm supplies cameras to a number of partners - each with a custom firmware.  It is possible your camera does not have access to all these API calls.
 
 [![Buy me a coffee](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/edent)
-
+All this was done by edent, I meerely forked this for my own safekeeping and to add additional notes.
 
 ## Accessing The Cameras
 Your camera may have been supplied with a username and password.  If you do not know what these credentials are, you can reset the camera to its defaults.
+
+If you have any issues setting values or accessing options, it is because the UI for these is severly out of date.  Use MS Edge and choose to open the page in IE mode.  (note, the page must be in HTTP, not HTTPS) once complete, you can use the page's funtions.
 
 ### Process
 * Unplug the power from the camera.
@@ -129,6 +131,7 @@ There is no response sent in reply to these commands - although you should be ab
 
 ### Arming
 Arming a camera allows you to create triggers for specific events.  For example, send an email on motion detection.
+Test is for any time, and Work is an example of only on Tuesday during a specified time
 
 * Check arming status
     * `/adm/get_group.cgi?group=EVENT`
@@ -136,23 +139,19 @@ Arming a camera allows you to create triggers for specific events.  For example,
  
 ```ini
 [EVENT]
-event_trigger=0
-event_schedule=1
-event_define1=
-event_define2=
-event_define3=
-event_define4=
-event_define5=
-event_define6=
-event_define7=
-event_define8=
-event_define9=
-event_define10=
-event_interval=0
-event_mt=email:0;ftpu:1;httpn:0;httppost:0;smbc:0
-event_attach=mp4,1,5,10
-event_audio=email:0;ftpu:1;httpn:0;httppost:0;smbc:0
-event_httpc=email:0;ftpu:0;httpn:0;httppost:0;smbc:0
+event_trigger=1
+event1_entry=is=1|es=0,|et=2|acts=op1:0;op2:0;email:1;ftpu:0;im:0;httpn:0;httppost:0;wlled:0;smbc:0;sd:0;op3:0;op4:0;smbc_rec:0;sd_rec:0;poll:0|ei=0|ea=avi,0,1,1|en=test
+event2_entry=is=1|es=1,3,08:00,16:59|et=2|acts=op1:0;op2:0;email:1;ftpu:0;im:0;httpn:0;httppost:0;wlled:0;smbc:0;sd:0;op3:0;op4:0;smbc_rec:0;sd_rec:0;poll:0|ei=5|ea=avi,3,3,1|en=Work
+event3_entry=
+event4_entry=
+event5_entry=
+event6_entry=
+event7_entry=
+event8_entry=
+event9_entry=
+event10_entry=
+event_jpeg_fps=5
+event11_entry=
 ```
 
 
