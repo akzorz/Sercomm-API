@@ -1692,6 +1692,16 @@ List of available telnet commands:
 - wait
 ```
 
+
+##Telnet
+To enable telnet do the following
+    URL http://[IP]/adm/file.cgi?todo=inject_telnetd
+
+Once enabled, use telnet with the following
+    Telnet username root
+    Telnet password Aq0+0009
+
+
 ## TODO!
 If you can help with these missing piece of functionality, I would be most grateful.
 
