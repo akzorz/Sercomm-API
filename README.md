@@ -1692,6 +1692,9 @@ List of available telnet commands:
 - wait
 ```
 
+## Copying files off of the camera
+If you would like to move files off the camera for external editing, ftp is not available, or at least the ftp command is not available.  However ftpput is, and can be used as such - 
+`ftpput -u user@mysite.com -p password ftp.mysite.com -P 21 /MediaAccess.cab /usr/local/www/img/MediaAccess.cab  -v`
 
 ## TODO!
 If you can help with these missing piece of functionality, I would be most grateful.
