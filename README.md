@@ -156,7 +156,7 @@ event11_entry=
 
 
 ```ini
-If we adjust the pre and post timings for capture from 3 before and 3 seconds after, we see -
+If we adjust the pre and post timings for capture from 3 before and 3 seconds after, to 5 before and 5 after, we get -
 [EVENT]
 event_trigger=1
 event1_entry=is=1|es=1,3,08:00,18:59|et=2|acts=op1:0;op2:0;email:1;ftpu:0;im:0;httpn:0;httppost:0;wlled:0;smbc:0;sd:0;op3:0;op4:0;smbc_rec:0;sd_rec:0;poll:0|ei=5|ea=avi,5,5,1|en=Test
