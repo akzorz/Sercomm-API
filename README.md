@@ -184,7 +184,7 @@ event11_entry=
         * Response `OK`
 * To set a value for an event send as follows -
   `{IP}/adm/set_group.cgi?group=EVENT&event3_entry=is=1,es=0,et=2,acts=op1:0;op2:0;email:1;ftpu:0;im:0;httpn:0;httppost:0;wlled:0;smbc:0;sd:0;op3:0;op4:0;smbc_rec:0;sd_rec:0;poll:0,ei=2,ea=avi,5,6,1,en=Always`
-  *note there are no pipes (|)
+  * note there are no pipes (|)
 
 ### Viewing Video
 There are several ways you can get video and audio out of the cameras.
